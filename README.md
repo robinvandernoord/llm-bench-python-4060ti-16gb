@@ -24,6 +24,8 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | deepseek-r1:14b  | 0.667       | 169.324           | 10 GB; 100% GPU        |
 | gemma3n:e4b      | 0.333       | 8.938             | 5.8 GB; 100% GPU       |
 | gpt-oss:20b      | 0.333       | 74.766            | 18 GB; 17%/83% CPU/GPU |
+| codellama:7b     | 0.000       | 4.354             | 6.9 GB; 100% GPU       |
+| qwen2.5-coder:7b | 0.000       | 11.913            | 5.6 GB; 100% GPU       |
 
 ## Usage
 
