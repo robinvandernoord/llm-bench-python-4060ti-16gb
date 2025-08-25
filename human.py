@@ -17,8 +17,10 @@ import sys
 
 SAFE_NAME_RE = re.compile(r"[^A-Za-z0-9_.-]")
 
+
 def safe_name(task_id: str) -> str:
     return SAFE_NAME_RE.sub("_", task_id)
+
 
 # ----------------- Python -----------------
 def generate_python(base_dir: Path, examples: t.Iterable[dict]) -> None:
@@ -50,6 +52,7 @@ def generate_python(base_dir: Path, examples: t.Iterable[dict]) -> None:
     print(f"Python tasks created in {lang_dir}")
     print(f"Run: cd {lang_dir} && pytest")
 
+
 # ----------------- Rust -----------------
 def generate_rust(base_dir: Path, examples: list[dict]) -> None:
     rust_dir = base_dir / "rust"
@@ -59,7 +62,9 @@ def generate_rust(base_dir: Path, examples: list[dict]) -> None:
 
     cargo_toml = rust_dir / "Cargo.toml"
     if not cargo_toml.exists():
-        cargo_toml.write_text('[package]\nname = "human_eval"\nversion = "0.1.0"\nedition = "2021"\n')
+        cargo_toml.write_text(
+            '[package]\nname = "human_eval"\nversion = "0.1.0"\nedition = "2021"\n'
+        )
 
     mod_lines = []
 
@@ -67,13 +72,21 @@ def generate_rust(base_dir: Path, examples: list[dict]) -> None:
         task_id = safe_name(item["task_id"])
         lib_path = src_dir / f"{task_id}.rs"
         mod_lines.append(f"mod {task_id};")
+
         with lib_path.open("w") as f:
+            # prompt as comments
             f.write(f"// {task_id}\n")
+            f.write("// Prompt:\n")
+            for line in item["prompt"].splitlines():
+                f.write(f"// {line}\n")
+            f.write("\n")
+
+            # stub with exactly one pair of braces
             if declaration := item.get("declaration"):
-                # only here use % formatting for literal braces
                 f.write("%s\n    // TODO: implement\n}\n" % declaration)
             else:
                 f.write("// No declaration provided\n")
+
             f.write("// Tests are below\n" + "\n" * 100)
             f.write(item["test"])
 
@@ -97,9 +110,13 @@ def generate_js(base_dir: Path, examples: list[dict]) -> None:
         file_path = js_dir / f"{task_id}.test.js"
 
         with file_path.open("w") as f:
+            # prompt as comments
             f.write(f"// {task_id}\n")
+            f.write("// Prompt:\n")
+            f.write(item["prompt"])
+
+            # stub with exactly one pair of braces
             if declaration := item.get("declaration"):
-                # stub with exactly one pair of braces
                 f.write("%s\n    // TODO: implement\n}\n" % declaration)
             else:
                 f.write("// No declaration provided\n")
@@ -118,6 +135,7 @@ LANG_GENERATORS = {
     "js": generate_js,
 }
 
+
 def main(langs: list[str]) -> None:
     base_dir = Path("/tmp/benchllama_human_eval_pack")
     if base_dir.exists():
@@ -130,6 +148,7 @@ def main(langs: list[str]) -> None:
         indices = random.sample(range(len(ds)), 10)
         generator = LANG_GENERATORS[lang]
         generator(base_dir, (ds[i] for i in indices))
+
 
 if __name__ == "__main__":
     langs = sys.argv[1:] if len(sys.argv) > 1 else ["python", "js", "rust"]
