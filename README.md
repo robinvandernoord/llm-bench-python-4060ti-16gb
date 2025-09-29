@@ -18,10 +18,12 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 |-----------------------------|------------------------|--------------------|---------------------|----------------|-----------------|------------------|-------------------|-----------------|
 | gemma3:12b ★                | 11 GB; 100% GPU        | 0.6                | 8.510               | 0.9            | 5.078           | 0.8              | 22.277            | 0.77            |
 | anthropic/claude-sonnet-4 ⚑ | -                      | 0.5                | -                   | 1.0            | -               | 0.5              | -                 | 0.67            |
+| deepseek-v3.1:671b-cloud ⚑  | -                      | 0.6                | -                   | 0.6            | -               | 0.8              | -                 | 0.67            |
 | qwen3-coder:30b             | 20 GB; 25%/75% CPU/GPU | 0.9                | 24.865              | 0.7            | 17.800          | 0.2              | 27.840            | 0.60            |
 | qwen3:14b                   | 10 GB; 100% GPU        | 0.7                | 116.899             | 0.7            | 112.468         | 0.4              | 187.583           | 0.60            |
 | deepseek-r1:14b             | 10 GB; 100% GPU        | 0.7                | 132.081             | 0.6            | 173.481         | 0.4              | 205.081           | 0.57            |
 | human oneshot ⚖             | -                      | 0.5                | -                   | 0.5            | -               | 0.7              | -                 | 0.57            |
+| qwen3-coder:480b-cloud ⚑    | -                      | 0.7                | -                   | 0.9            | -               | 0.1              | -                 | 0.57            |
 | codegemma:7b                | 8.1 GB; 100% GPU       | 0.6                | 2.723               | 0.8            | 2.691           | 0.2              | 4.490             | 0.53            |
 | cogito:14b                  | 10 GB; 100% GPU        | 0.4                | 21.947              | 0.6            | 19.478          | 0.6              | 20.930            | 0.53            |
 | granite-code:8b             | 6.1 GB; 100% GPU       | 0.6                | 2.272               | 0.4            | 7.896           | 0.4              | 2.833             | 0.47            |
@@ -35,7 +37,9 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | qwen2.5-coder:14b           | 10 GB; 100% GPU        | 0.0                | 15.265              | 0.0            | 15.471          | 0.8              | 19.263            | 0.27            |
 | mistral:7b                  | 5.8 GB; 100% GPU       | 0.3                | 5.932               | 0.2            | 5.933           | 0.2              | 6.900             | 0.23            |
 | glm4:9b                     | 6.2 GB; 100% GPU       | 0.0                | 9.084               | 0.1            | 10.397          | 0.6              | 11.080            | 0.23            |
+| kimi-k2:1t-cloud  ⚑         | -                      | 0.2                | -                   | 0.4            | -               | 0.1              | -                 | 0.23            |
 | deepseek-coder-v2:16b       | 10 GB; 100% GPU        | 0.0                | 4.397               | 0.0            | 4.488           | 5.722            | 0.4               | 0.13            |
+| gpt-oss:120b ⚑ [3]          | -                      | 0.2                | -                   | 0.1            | -               | 0.0              | -                 | 0.1             |
 | codellama:7b [1]            | 6.9 GB; 100% GPU       | 0.0                | 3.371               | 0.0            | 5.301           | 0.0              | 5.616             | 0.0             |
 | codellama:13b [1]           | 11 GB; 100% GPU        | 0.0                | 4.549               | 0.0            | 6.714           | 0.0              | 9.008             | 0.0             |
 | gpt-oss:20b [2]             | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   | ?              | ?               | ?                | ?                 | ?               |
@@ -46,8 +50,10 @@ The threshold is set to an avg. correctness of 0.7 across the three languages.
 
 [1] `codellama` always generated extra non-code text, causing the tests to fail  
 [2]` gpt-oss` takes forever before giving any answers.  
+[3] Crashes in Rust and JS with ResponseError: upstream error / 502 server error
+
 ★ means a model passed the triage threshold and continues to the full test.  
-⚑ indicates a flagship model. These are included as a baseline and will not be fully tested.
+⚑ indicates a flagship model running in the cloud. These are included as a baseline and will not be fully tested.
 
 ## Results for all samples Python + JS + Rust
 
