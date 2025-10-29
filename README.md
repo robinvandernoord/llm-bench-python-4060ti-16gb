@@ -31,7 +31,10 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | minimax-m2:cloud  ⚑           | -                      | 0.4                | -                   | 0.4            | -               | 0.6              | -                 | 0.47            |
 | gemma3n:e4b                   | 5.8 GB; 100% GPU       | 0.7                | 4.958               | 0.6            | 5.444           | 0.0              | 17.887            | 0.43            |
 | codestral:22b                 | 14 GB; 100% GPU        | 0.3                | 14.467              | 0.5            | 15.059          | 0.5              | 17.487            | 0.43            |
+| anthropic/claude-haiku-4.5 ⚑  | -                      | 0.6                | -                   | 0.0            | -               | 0.7              | -                 | 0.43            |
+| qwen3-vl:235b-cloud ⚑         | -                      | 0.7                | -                   | 0.0            | -               | 0.6              | -                 | 0.43            |
 | openai/gpt-5 ⚑                | -                      | 1.0                | -                   | 0.0            | -               | 0.2              | -                 | 0.40            |
+| openai/gpt-5-codex ⚑          | -                      | 0.6                | -                   | 0.0            | -               | 0.6              | -                 | 0.40            |
 | mistral-nemo:12b              | 8.3 GB; 100% GPU       | 0.3                | 6.990               | 0.8            | 6.494           | 0.0              | 7.641             | 0.37            |
 | z-ai/glm-4.6 ⚑                | -                      | 0.4                | -                   | 0.4            | -               | 0.3              | -                 | 0.37            |
 | solar:10.7b                   | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.3             |
@@ -40,7 +43,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | qwen2.5-coder:14b             | 10 GB; 100% GPU        | 0.0                | 15.265              | 0.0            | 15.471          | 0.8              | 19.263            | 0.27            |
 | mistral:7b                    | 5.8 GB; 100% GPU       | 0.3                | 5.932               | 0.2            | 5.933           | 0.2              | 6.900             | 0.23            |
 | glm4:9b                       | 6.2 GB; 100% GPU       | 0.0                | 9.084               | 0.1            | 10.397          | 0.6              | 11.080            | 0.23            |
-| kimi-k2:1t-cloud  ⚑           | -                      | 0.2                | -                   | 0.4            | -               | 0.1              | -                 | 0.23            |
+| kimi-k2:1t-cloud ⚑            | -                      | 0.2                | -                   | 0.4            | -               | 0.1              | -                 | 0.23            |
 | deepseek-coder-v2:16b         | 10 GB; 100% GPU        | 0.0                | 4.397               | 0.0            | 4.488           | 0.4              | 5.722             | 0.13            |
 | gpt-oss:120b ⚑ [3]            | -                      | 0.2                | -                   | 0.1            | -               | 0.0              | -                 | 0.1             |
 | codellama:7b [1]              | 6.9 GB; 100% GPU       | 0.0                | 3.371               | 0.0            | 5.301           | 0.0              | 5.616             | 0.0             |
