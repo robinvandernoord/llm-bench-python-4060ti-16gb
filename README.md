@@ -28,6 +28,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | codegemma:7b                  | 8.1 GB; 100% GPU       | 0.6                | 2.723               | 0.8            | 2.691           | 0.2              | 4.490             | 0.53            |
 | cogito:14b                    | 10 GB; 100% GPU        | 0.4                | 21.947              | 0.6            | 19.478          | 0.6              | 20.930            | 0.53            |
 | granite-code:8b               | 6.1 GB; 100% GPU       | 0.6                | 2.272               | 0.4            | 7.896           | 0.4              | 2.833             | 0.47            |
+| minimax-m2:cloud  ⚑           | -                      | 0.4                | -                   | 0.4            | -               | 0.6              | -                 | 0.47            |
 | gemma3n:e4b                   | 5.8 GB; 100% GPU       | 0.7                | 4.958               | 0.6            | 5.444           | 0.0              | 17.887            | 0.43            |
 | codestral:22b                 | 14 GB; 100% GPU        | 0.3                | 14.467              | 0.5            | 15.059          | 0.5              | 17.487            | 0.43            |
 | openai/gpt-5 ⚑                | -                      | 1.0                | -                   | 0.0            | -               | 0.2              | -                 | 0.40            |
