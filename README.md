@@ -38,6 +38,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | qwen3-vl:235b-cloud ⚑         | -                      | 0.7                | -                   | 0.0            | -               | 0.6              | -                 | 0.43            |
 | mistral-nemo:12b              | 8.3 GB; 100% GPU       | 0.3                | 6.990               | 0.8            | 6.494           | 0.0              | 7.641             | 0.37            |
 | z-ai/glm-4.6 ⚑                | -                      | 0.4                | -                   | 0.4            | -               | 0.3              | -                 | 0.37            |
+| google/gemini-2.5-pro ⚑       | -                      | 0.4                | -                   | 0.4            | -               | 0.2              | -                 | 0.33            |
 | solar:10.7b                   | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.3             |
 | gemma3:4b                     | 5.8 GB; 100% GPU       | 0.2                | 2.752               | 0.6            | 2.752           | 0.0              | 8.955             | 0.27            |
 | qwen2.5-coder:7b              | 5.6 GB; 100% GPU       | 0.0                | 9.000               | 0.0            | 11.177          | 0.8              | 10.769            | 0.27            |
