@@ -30,6 +30,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | qwen3-coder:480b-cloud ⚑      | -                      | 0.7                | -                   | 0.9            | -               | 0.1              | -                 | 0.57            |
 | codegemma:7b                  | 8.1 GB; 100% GPU       | 0.6                | 2.723               | 0.8            | 2.691           | 0.2              | 4.490             | 0.53            |
 | cogito:14b                    | 10 GB; 100% GPU        | 0.4                | 21.947              | 0.6            | 19.478          | 0.6              | 20.930            | 0.53            |
+| google/gemini-3-pro-preview ⚑ | -                      | 0.6                | -                   | 0.3            | -               | 0.8              | -                 | 0.50            |
 | granite-code:8b               | 6.1 GB; 100% GPU       | 0.6                | 2.272               | 0.4            | 7.896           | 0.4              | 2.833             | 0.47            |
 | minimax-m2:cloud  ⚑           | -                      | 0.4                | -                   | 0.4            | -               | 0.6              | -                 | 0.47            |
 | gemma3n:e4b                   | 5.8 GB; 100% GPU       | 0.7                | 4.958               | 0.6            | 5.444           | 0.0              | 17.887            | 0.43            |
@@ -39,7 +40,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | mistral-nemo:12b              | 8.3 GB; 100% GPU       | 0.3                | 6.990               | 0.8            | 6.494           | 0.0              | 7.641             | 0.37            |
 | z-ai/glm-4.6 ⚑                | -                      | 0.4                | -                   | 0.4            | -               | 0.3              | -                 | 0.37            |
 | google/gemini-2.5-pro ⚑       | -                      | 0.4                | -                   | 0.4            | -               | 0.2              | -                 | 0.33            |
-| solar:10.7b                   | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.3             |
+| solar:10.7b                   | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.30            |
 | gemma3:4b                     | 5.8 GB; 100% GPU       | 0.2                | 2.752               | 0.6            | 2.752           | 0.0              | 8.955             | 0.27            |
 | qwen2.5-coder:7b              | 5.6 GB; 100% GPU       | 0.0                | 9.000               | 0.0            | 11.177          | 0.8              | 10.769            | 0.27            |
 | qwen2.5-coder:14b             | 10 GB; 100% GPU        | 0.0                | 15.265              | 0.0            | 15.471          | 0.8              | 19.263            | 0.27            |
@@ -47,9 +48,9 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | glm4:9b                       | 6.2 GB; 100% GPU       | 0.0                | 9.084               | 0.1            | 10.397          | 0.6              | 11.080            | 0.23            |
 | kimi-k2:1t-cloud ⚑            | -                      | 0.2                | -                   | 0.4            | -               | 0.1              | -                 | 0.23            |
 | deepseek-coder-v2:16b         | 10 GB; 100% GPU        | 0.0                | 4.397               | 0.0            | 4.488           | 0.4              | 5.722             | 0.13            |
-| gpt-oss:120b ⚑ [3]            | -                      | 0.2                | -                   | 0.1            | -               | 0.0              | -                 | 0.1             |
-| codellama:7b [1]              | 6.9 GB; 100% GPU       | 0.0                | 3.371               | 0.0            | 5.301           | 0.0              | 5.616             | 0.0             |
-| codellama:13b [1]             | 11 GB; 100% GPU        | 0.0                | 4.549               | 0.0            | 6.714           | 0.0              | 9.008             | 0.0             |
+| gpt-oss:120b ⚑ [3]            | -                      | 0.2                | -                   | 0.1            | -               | 0.0              | -                 | 0.10            |
+| codellama:7b [1]              | 6.9 GB; 100% GPU       | 0.0                | 3.371               | 0.0            | 5.301           | 0.0              | 5.616             | 0.00            |
+| codellama:13b [1]             | 11 GB; 100% GPU        | 0.0                | 4.549               | 0.0            | 6.714           | 0.0              | 9.008             | 0.00            |
 | gpt-oss:20b [2]               | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   | ?              | ?               | ?                | ?                 | ?               |
 
 These results are used as an initial triage to determine which to further explore,
