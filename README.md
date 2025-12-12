@@ -53,15 +53,21 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | gpt-oss:120b ⚑ [3]            | -                      | 0.2                | -                   | 0.1            | -               | 0.0              | -                 | 0.10            |
 | codellama:7b [1]              | 6.9 GB; 100% GPU       | 0.0                | 3.371               | 0.0            | 5.301           | 0.0              | 5.616             | 0.00            |
 | codellama:13b [1]             | 11 GB; 100% GPU        | 0.0                | 4.549               | 0.0            | 6.714           | 0.0              | 9.008             | 0.00            |
-| gpt-oss:20b [2]               | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   | ?              | ?               | ?                | ?                 | ?               |
+| gpt-oss:20b [2]               | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   |                |                 |                  |                   |                 |
+| rnj-1:8b [2, 4]               | 6.2 GB; 100% GPU       | 0.0                | 9.393               |                |                 |                  |                   |                 |
+| devstral-small-2 [4]          | 16 GB; 11%/89% CPU/GPU | 0.5                | 28.457              |                |                 |                  |                   |                 |
+| devstral-2 ⚑                  | -                      |                    |                     |                |                 |                  |                   |                 |
+| gpt-5.2 ⚑                     | -                      |                    |                     |                |                 |                  |                   |                 |
+|                               |                        |                    |                     |                |                 |                  |                   |                 |
 
 These results are used as an initial triage to determine which to further explore,
 because the full run takes a long time with almost 500 tests across multiple languages.
 The threshold is set to an avg. correctness of 0.7 across the three languages.
 
 [1] `codellama` always generated extra non-code text, causing the tests to fail  
-[2]` gpt-oss` takes forever before giving any answers.  
+[2] takes forever before giving any answers.
 [3] Crashes in Rust and JS with ResponseError: upstream error / 502 server error
+[4] Moderate Python score combined with slow runtime; remaining tests skipped.
 
 ★ means a model passed the triage threshold and continues to the full test.  
 ⚑ indicates a flagship model running in the cloud. These are included as a baseline and will not be fully tested.
