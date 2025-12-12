@@ -29,6 +29,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | deepseek-r1:14b               | 10 GB; 100% GPU        | 0.7                | 132.081             | 0.6            | 173.481         | 0.4              | 205.081           | 0.57            |
 | granite4:tiny-h               | 5.1 GB; 100% GPU       | 0.6                | 3.988               | 0.6            | 5.937           | 0.5              | 6.638             | 0.57            |
 | human oneshot ⚖               | -                      | 0.5                | -                   | 0.5            | -               | 0.7              | -                 | 0.57            |
+| gpt-5.2 ⚑                     | -                      | 0.8                | -                   | 0.0            | -               | 0.8              | -                 | 0.53            |
 | codegemma:7b                  | 8.1 GB; 100% GPU       | 0.6                | 2.723               | 0.8            | 2.691           | 0.2              | 4.490             | 0.53            |
 | cogito:14b                    | 10 GB; 100% GPU        | 0.4                | 21.947              | 0.6            | 19.478          | 0.6              | 20.930            | 0.53            |
 | google/gemini-3-pro-preview ⚑ | -                      | 0.6                | -                   | 0.3            | -               | 0.8              | -                 | 0.50            |
@@ -41,7 +42,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | codestral:22b                 | 14 GB; 100% GPU        | 0.3                | 14.467              | 0.5            | 15.059          | 0.5              | 17.487            | 0.43            |
 | mistral-nemo:12b              | 8.3 GB; 100% GPU       | 0.3                | 6.990               | 0.8            | 6.494           | 0.0              | 7.641             | 0.37            |
 | z-ai/glm-4.6 ⚑                | -                      | 0.4                | -                   | 0.4            | -               | 0.3              | -                 | 0.37            |
-| google/gemini-2.5-pro ⚑       | -                      | 0.4                | -                   | 0.4            | -               | 0.2              | -                 | 0.33            |
+| devstral-2:123b-cloud ⚑       | -                      | 0.6                | -                   | 0.0            | -               | 0.4              | -                 | 0.33            |
 | solar:10.7b                   | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.30            |
 | gemma3:4b                     | 5.8 GB; 100% GPU       | 0.2                | 2.752               | 0.6            | 2.752           | 0.0              | 8.955             | 0.27            |
 | qwen2.5-coder:7b              | 5.6 GB; 100% GPU       | 0.0                | 9.000               | 0.0            | 11.177          | 0.8              | 10.769            | 0.27            |
@@ -56,8 +57,6 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | gpt-oss:20b [2]               | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   |                |                 |                  |                   |                 |
 | rnj-1:8b [2, 4]               | 6.2 GB; 100% GPU       | 0.0                | 9.393               |                |                 |                  |                   |                 |
 | devstral-small-2 [4]          | 16 GB; 11%/89% CPU/GPU | 0.5                | 28.457              |                |                 |                  |                   |                 |
-| devstral-2 ⚑                  | -                      |                    |                     |                |                 |                  |                   |                 |
-| gpt-5.2 ⚑                     | -                      |                    |                     |                |                 |                  |                   |                 |
 |                               |                        |                    |                     |                |                 |                  |                   |                 |
 
 These results are used as an initial triage to determine which to further explore,
