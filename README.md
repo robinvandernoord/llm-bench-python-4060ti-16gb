@@ -31,6 +31,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | mistral-large-3:675b-cloud  ⚑   | -                      | 0.7                | -                   | 0.8            | -               | 0.2              | -                 | 0.57            |
 | deepseek-r1:14b                 | 10 GB; 100% GPU        | 0.7                | 132.081             | 0.6            | 173.481         | 0.4              | 205.081           | 0.57            |
 | granite4:tiny-h                 | 5.1 GB; 100% GPU       | 0.6                | 3.988               | 0.6            | 5.937           | 0.5              | 6.638             | 0.57            |
+| devstral-small-2                | 16 GB; 11%/89% CPU/GPU | 0.5                | 28.457              | 0.6            | -               | 0.6              | -                 | 0.57            |
 | human oneshot ⚖                 | -                      | 0.5                | -                   | 0.5            | -               | 0.7              | -                 | 0.57            |
 | openai/gpt-5.2 ⚑                | -                      | 0.8                | -                   | 0.0            | -               | 0.8              | -                 | 0.53            |
 | codegemma:7b                    | 8.1 GB; 100% GPU       | 0.6                | 2.723               | 0.8            | 2.691           | 0.2              | 4.490             | 0.53            |
@@ -59,7 +60,6 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | codellama:13b [1]               | 11 GB; 100% GPU        | 0.0                | 4.549               | 0.0            | 6.714           | 0.0              | 9.008             | 0.00            |
 | gpt-oss:20b [2]                 | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   |                |                 |                  |                   |                 |
 | rnj-1:8b [2, 4]                 | 6.2 GB; 100% GPU       | 0.0                | 9.393               |                |                 |                  |                   |                 |
-| devstral-small-2 [4]            | 16 GB; 11%/89% CPU/GPU | 0.5                | 28.457              |                |                 |                  |                   |                 |
 |                                 |                        |                    |                     |                |                 |                  |                   |                 |
 
 These results are used as an initial triage to determine which to further explore,
