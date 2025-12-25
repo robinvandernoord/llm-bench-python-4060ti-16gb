@@ -16,8 +16,11 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 
 | Model                           | Memory Usage           | Python Correctness | Python Duration (s) | JS Correctness | JS Duration (s) | Rust Correctness | Rust Duration (s) | Avg Correctness |
 |---------------------------------|------------------------|--------------------|---------------------|----------------|-----------------|------------------|-------------------|-----------------|
+| anthropic/claude-opus-4.5  ⚑    | -                      | 1.0                | -                   | 1.0            | -               | 0.9              | -                 | 0.97            |
 | anthropic/claude-sonnet-4.5 ⚑   | -                      | 1.0                | -                   | 0.9            | -               | 1.0              | -                 | 0.97            |
-| x-ai/grok-4.1-fast:free ⚑       | -                      | 0.8                | -                   | 0.8            | -               | 0.8              | -                 | 0.80            |
+| x-ai/grok-code-fast-1 ⚑         | -                      | 0.8                | -                   | 1.0            | -               | 0.8              | -                 | 0.87            |
+| x-ai/grok-4.1-fast ⚑            | -                      | 0.8                | -                   | 0.8            | -               | 0.8              | -                 | 0.80            |
+| kwaipilot/kat-coder-pro ⚑       | -                      | 0.6                | -                   | 0.8            | -               | 1.0              | -                 | 0.80            |
 | z-ai/glm-4.7 ⚑                  | -                      | 0.8                | -                   | 0.9            | -               | 0.6              | -                 | 0.77            |
 | gemma3:12b ★                    | 11 GB; 100% GPU        | 0.6                | 8.510               | 0.9            | 5.078           | 0.8              | 22.277            | 0.77            |
 | minimax/minimax-m2.1  ⚑         | -                      | 0.7                | -                   | 1.0            | -               | 0.5              | -                 | 0.73            |
