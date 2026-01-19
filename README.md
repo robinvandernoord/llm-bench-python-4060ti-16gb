@@ -24,11 +24,11 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | kwaipilot/kat-coder-pro ⚑       | -                      | 0.6                | -                   | 0.8            | -               | 1.0              | -                 | 0.80            |
 | z-ai/glm-4.7 ⚑                  | -                      | 0.8                | -                   | 0.9            | -               | 0.6              | -                 | 0.77            |
 | gemma3:12b ★                    | 11 GB; 100% GPU        | 0.6                | 8.510               | 0.9            | 5.078           | 0.8              | 22.277            | 0.77            |
+| openai/gpt-5.2-codex ⚑          | -                      | 0.8                | -                   | 0.5            | -               | 0.9              | -                 | 0.73            |
 | minimax/minimax-m2.1  ⚑         | -                      | 0.7                | -                   | 1.0            | -               | 0.5              | -                 | 0.73            |
 | xiaomi/mimo-v2-flash ⚑          | -                      | 0.8                | -                   | 0.9            | -               | 0.4              | -                 | 0.70            |
 | openai/gpt-5.1 ⚑                | -                      | 0.8                | -                   | 0.6            | -               | 0.7              | -                 | 0.70            |
 | deepseek-v3.1:671b-cloud ⚑      | -                      | 0.6                | -                   | 0.6            | -               | 0.8              | -                 | 0.67            |
-| openai/gpt-5.1-codex ⚑          | -                      | 0.6                | -                   | 0.6            | -               | 0.7              | -                 | 0.63            |
 | qwen3-coder:30b                 | 20 GB; 25%/75% CPU/GPU | 0.9                | 24.865              | 0.7            | 17.800          | 0.2              | 27.840            | 0.60            |
 | qwen3:14b                       | 10 GB; 100% GPU        | 0.7                | 116.899             | 0.7            | 112.468         | 0.4              | 187.583           | 0.60            |
 | olmo-3:7b                       | 6.7 GB; 100% GPU       | 0.5                | 73.098              | 0.9            | 93.734          | 0.4              | 113.089           | 0.60            |
