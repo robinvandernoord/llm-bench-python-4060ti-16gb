@@ -20,6 +20,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | anthropic/claude-sonnet-4.5 ⚑   | -                      | 1.0                | -                   | 0.9            | -               | 1.0              | -                 | 0.97            |
 | x-ai/grok-code-fast-1 ⚑         | -                      | 0.8                | -                   | 1.0            | -               | 0.8              | -                 | 0.87            |
 | deepseek/deepseek-v3.2 ⚑        | -                      | 0.8                | -                   | 0.8            | -               | 0.9              | -                 | 0.83            |
+| kimi-k2.5 ⚑                     | -                      | 0.8                | -                   | 0.8            | -               | 0.8              | -                 | 0.80            |
 | x-ai/grok-4.1-fast ⚑            | -                      | 0.8                | -                   | 0.8            | -               | 0.8              | -                 | 0.80            |
 | kwaipilot/kat-coder-pro ⚑       | -                      | 0.6                | -                   | 0.8            | -               | 1.0              | -                 | 0.80            |
 | z-ai/glm-4.7 ⚑                  | -                      | 0.8                | -                   | 0.9            | -               | 0.6              | -                 | 0.77            |
@@ -29,6 +30,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | xiaomi/mimo-v2-flash ⚑          | -                      | 0.8                | -                   | 0.9            | -               | 0.4              | -                 | 0.70            |
 | openai/gpt-5.1 ⚑                | -                      | 0.8                | -                   | 0.6            | -               | 0.7              | -                 | 0.70            |
 | NousCoder-14B-GGUF:Q6_K         | 12 GB; 100% GPU        | 0.7                | 167.071             | 0.7            | 185.254         | 0.6              | 1144.874          | 0.67            |
+| writer/palmyra-x5 ⚑             | -                      | 0.7                | -                   | 0.7            | -               | 0.6              | -                 | 0.67            |
 | deepseek-v3.1:671b-cloud ⚑      | -                      | 0.6                | -                   | 0.6            | -               | 0.8              | -                 | 0.67            |
 | qwen3-coder:30b                 | 20 GB; 25%/75% CPU/GPU | 0.9                | 24.865              | 0.7            | 17.800          | 0.2              | 27.840            | 0.60            |
 | qwen3:14b                       | 10 GB; 100% GPU        | 0.7                | 116.899             | 0.7            | 112.468         | 0.4              | 187.583           | 0.60            |
@@ -54,11 +56,11 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | z-ai/glm-4.7-flash ⚑            | -                      | 0.3                | -                   | 0.6            | -               | 0.2              | -                 | 0.37            |
 | devstral-2:123b-cloud ⚑         | -                      | 0.6                | -                   | 0.0            | -               | 0.4              | -                 | 0.33            |
 | solar:10.7b                     | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.30            |
+| lfm2.5-thinking:1.2b            | 979 MB; 100% GPU       | 0.4                | 14.108              | 0.4            | 10.264          | 0.1              | 12.881            | 0.30            |
 | gemma3:4b                       | 5.8 GB; 100% GPU       | 0.2                | 2.752               | 0.6            | 2.752           | 0.0              | 8.955             | 0.27            |
 | qwen2.5-coder:7b                | 5.6 GB; 100% GPU       | 0.0                | 9.000               | 0.0            | 11.177          | 0.8              | 10.769            | 0.27            |
 | qwen2.5-coder:14b               | 10 GB; 100% GPU        | 0.0                | 15.265              | 0.0            | 15.471          | 0.8              | 19.263            | 0.27            |
 | mistral:7b                      | 5.8 GB; 100% GPU       | 0.3                | 5.932               | 0.2            | 5.933           | 0.2              | 6.900             | 0.23            |
-| kimi-k2:1t-cloud ⚑              | -                      | 0.2                | -                   | 0.4            | -               | 0.1              | -                 | 0.23            |
 | nemotron-3-nano:30b-cloud ⚑     | -                      | 0.2                | -                   | 0.3            | -               | 0.2              | -                 | 0.23            |
 | glm4:9b                         | 6.2 GB; 100% GPU       | 0.0                | 9.084               | 0.1            | 10.397          | 0.6              | 11.080            | 0.23            |
 | deepseek-coder-v2:16b           | 10 GB; 100% GPU        | 0.0                | 4.397               | 0.0            | 4.488           | 0.4              | 5.722             | 0.13            |
