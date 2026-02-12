@@ -55,6 +55,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | qwen3-vl:235b-cloud ⚑            | -                      | 0.7                | -                   | 0.0            | -               | 0.6              | -                 | 0.43            |
 | anthropic/claude-haiku-4.5 ⚑     | -                      | 0.6                | -                   | 0.0            | -               | 0.7              | -                 | 0.43            |
 | codestral:22b                    | 14 GB; 100% GPU        | 0.3                | 14.467              | 0.5            | 15.059          | 0.5              | 17.487            | 0.43            |
+| qwen/qwen3-coder-next ⚑          | -                      | 0.6                | -                   | 0.0            | -               | 0.6              | -                 | 0.40            |
 | mistral-nemo:12b                 | 8.3 GB; 100% GPU       | 0.3                | 6.990               | 0.8            | 6.494           | 0.0              | 7.641             | 0.37            |
 | z-ai/glm-4.7-flash ⚑             | -                      | 0.3                | -                   | 0.6            | -               | 0.2              | -                 | 0.37            |
 | devstral-2:123b-cloud ⚑          | -                      | 0.6                | -                   | 0.0            | -               | 0.4              | -                 | 0.33            |
