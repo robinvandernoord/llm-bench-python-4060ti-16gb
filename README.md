@@ -29,6 +29,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | gemma3:12b ★                     | 11 GB; 100% GPU        | 0.6                | 8.510               | 0.9            | 5.078           | 0.8              | 22.277            | 0.77            |
 | openai/gpt-5.2-codex ⚑           | -                      | 0.8                | -                   | 0.5            | -               | 0.9              | -                 | 0.73            |
 | minimax/minimax-m2.1  ⚑          | -                      | 0.7                | -                   | 1.0            | -               | 0.5              | -                 | 0.73            |
+| qwen/qwen3.5-397b-a17b ⚑         | -                      | 0.5                | -                   | 0.8            | -               | 0.9              | -                 | 0.73            |
 | xiaomi/mimo-v2-flash ⚑           | -                      | 0.8                | -                   | 0.9            | -               | 0.4              | -                 | 0.70            |
 | openai/gpt-5.1 ⚑                 | -                      | 0.8                | -                   | 0.6            | -               | 0.7              | -                 | 0.70            |
 | NousCoder-14B-GGUF:Q6_K          | 12 GB; 100% GPU        | 0.7                | 167.071             | 0.7            | 185.254         | 0.6              | 1144.874          | 0.67            |
@@ -51,6 +52,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | ministral-3:8b                   | 16 GB; 10%/90% CPU/GPU | 0.5                | 15.057              | 0.5            | 22.480          | 0.5              | 34.288            | 0.50            |
 | google/gemini-3-flash-preview ⚑  | -                      | 0.4                | -                   | 0.1            | -               | 1.0              | -                 | 0.50            |
 | granite-code:8b                  | 6.1 GB; 100% GPU       | 0.6                | 2.272               | 0.4            | 7.896           | 0.4              | 2.833             | 0.47            |
+| qwen/qwen3.5-plus-02-15 ⚑        | -                      | 0.8                | -                   | 0.5            | -               | 0.0              | -                 | 0.43            |
 | gemma3n:e4b                      | 5.8 GB; 100% GPU       | 0.7                | 4.958               | 0.6            | 5.444           | 0.0              | 17.887            | 0.43            |
 | qwen3-vl:235b-cloud ⚑            | -                      | 0.7                | -                   | 0.0            | -               | 0.6              | -                 | 0.43            |
 | anthropic/claude-haiku-4.5 ⚑     | -                      | 0.6                | -                   | 0.0            | -               | 0.7              | -                 | 0.43            |
