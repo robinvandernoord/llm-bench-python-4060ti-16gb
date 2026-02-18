@@ -37,6 +37,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | deepseek-v3.1:671b-cloud ⚑       | -                      | 0.6                | -                   | 0.6            | -               | 0.8              | -                 | 0.67            |
 | qwen3-coder:30b                  | 20 GB; 25%/75% CPU/GPU | 0.9                | 24.865              | 0.7            | 17.800          | 0.2              | 27.840            | 0.60            |
 | qwen3:14b                        | 10 GB; 100% GPU        | 0.7                | 116.899             | 0.7            | 112.468         | 0.4              | 187.583           | 0.60            |
+| anthropic/claude-sonnet-4.6 ⚑    | -                      | 0.4                | -                   | 0.7            | -               | 0.7              | -                 | 0.60            |
 | olmo-3:7b                        | 6.7 GB; 100% GPU       | 0.5                | 73.098              | 0.9            | 93.734          | 0.4              | 113.089           | 0.60            |
 | z-ai/glm-5 ⚑                     | -                      | 0.4                | -                   | 0.8            | -               | 0.6              | -                 | 0.60            |
 | qwen3-coder:480b-cloud ⚑         | -                      | 0.7                | -                   | 0.9            | -               | 0.1              | -                 | 0.57            |
