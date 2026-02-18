@@ -32,6 +32,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | qwen/qwen3.5-397b-a17b ⚑         | -                      | 0.5                | -                   | 0.8            | -               | 0.9              | -                 | 0.73            |
 | xiaomi/mimo-v2-flash ⚑           | -                      | 0.8                | -                   | 0.9            | -               | 0.4              | -                 | 0.70            |
 | openai/gpt-5.1 ⚑                 | -                      | 0.8                | -                   | 0.6            | -               | 0.7              | -                 | 0.70            |
+| stepfun/step-3.5-flash ⚑         | -                      | 0.7                | -                   | 1.0            | -               | 0.3              | -                 | 0.67            |
 | NousCoder-14B-GGUF:Q6_K          | 12 GB; 100% GPU        | 0.7                | 167.071             | 0.7            | 185.254         | 0.6              | 1144.874          | 0.67            |
 | writer/palmyra-x5 ⚑              | -                      | 0.7                | -                   | 0.7            | -               | 0.6              | -                 | 0.67            |
 | deepseek-v3.1:671b-cloud ⚑       | -                      | 0.6                | -                   | 0.6            | -               | 0.8              | -                 | 0.67            |
