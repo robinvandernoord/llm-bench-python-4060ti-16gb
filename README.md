@@ -35,6 +35,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | ministral-3:8b          | 16 GB; 10%/90% CPU/GPU | 0.5                | 15.057              | 0.5            | 22.480          | 0.5              | 34.288            | 0.50            |
 | granite-code:8b         | 6.1 GB; 100% GPU       | 0.6                | 2.272               | 0.4            | 7.896           | 0.4              | 2.833             | 0.47            |
 | gemma3n:e4b             | 5.8 GB; 100% GPU       | 0.7                | 4.958               | 0.6            | 5.444           | 0.0              | 17.887            | 0.43            |
+| lfm2.5:8b               | 5.3 GB; 100% GPU       | 0.5                | 23.048              | 0.5            | 7.941           | 0.3              | 18.242            | 0.43            |
 | codestral:22b           | 14 GB; 100% GPU        | 0.3                | 14.467              | 0.5            | 15.059          | 0.5              | 17.487            | 0.43            |
 | mistral-nemo:12b        | 8.3 GB; 100% GPU       | 0.3                | 6.990               | 0.8            | 6.494           | 0.0              | 7.641             | 0.37            |
 | solar:10.7b             | 7.7 GB; 100% GPU       | 0.6                | 4.444               | 0.3            | 8.538           | 0.0              | 9.198             | 0.30            |
@@ -45,6 +46,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | mistral:7b              | 5.8 GB; 100% GPU       | 0.3                | 5.932               | 0.2            | 5.933           | 0.2              | 6.900             | 0.23            |
 | glm4:9b                 | 6.2 GB; 100% GPU       | 0.0                | 9.084               | 0.1            | 10.397          | 0.6              | 11.080            | 0.23            |
 | deepseek-coder-v2:16b   | 10 GB; 100% GPU        | 0.0                | 4.397               | 0.0            | 4.488           | 0.4              | 5.722             | 0.13            |
+| gemma4:12b [1]          | 8.1 GB; 100% GPU       | 0.0                | 58.835              | 0.1            | 72.085          | 0.3              | 91.878            | 0.13            |
 | gemma4:e4b [1]          | 10 GB; 100% GPU        | 0.0                | 25.608              | 0.0            | 27.256          | 0.1              | 35.551            | 0.03            |
 | codellama:7b [1]        | 6.9 GB; 100% GPU       | 0.0                | 3.371               | 0.0            | 5.301           | 0.0              | 5.616             | 0.00            |
 | codellama:13b [1]       | 11 GB; 100% GPU        | 0.0                | 4.549               | 0.0            | 6.714           | 0.0              | 9.008             | 0.00            |
@@ -57,7 +59,7 @@ These results are used as an initial triage to determine which to further explor
 because the full run takes a long time with almost 500 tests across multiple languages.
 The threshold is set to an avg. correctness of 0.7 across the three languages.
 
-[1] always generated extra non-code text, causing the tests to fail  
+[1] often generated extra non-code text, causing the tests to fail
 [2] takes forever before giving any answers.  
 [3] Crashes in Rust and JS with ResponseError: upstream error / 502 server error  
 [4] Insufficient Python score combined with slow runtime; remaining tests skipped.
