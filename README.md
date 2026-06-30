@@ -21,6 +21,7 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | granite4.1:8b           | 6.2 GB; 100% GPU       | 0.7                | 10.084              | 0.7            | 10.696          | 0.6              | 10.929            | 0.67            |
 | NousCoder-14B-GGUF:Q6_K | 12 GB; 100% GPU        | 0.7                | 167.071             | 0.7            | 185.254         | 0.6              | 1144.874          | 0.67            |
 | codegeex4:9b            | 5.6 GB; 100% GPU       | 0.6                | 2.151               | 0.9            | 1.777           | 0.5              | 4.297             | 0.67            |
+| ornith:9b               | 5.3 GB; 100% GPU       | 0.8                | 18.917              | 0.7            | 22.946          | 0.4              | 11.166            | 0.63            |
 | qwen3.5:9b              | 14 GB; 100% GPU        | 0.7                | 22.832              | 0.7            | 33.959          | 0.5              | 58.117            | 0.63            |
 | qwen3-coder:30b         | 20 GB; 25%/75% CPU/GPU | 0.9                | 24.865              | 0.7            | 17.800          | 0.2              | 27.840            | 0.60            |
 | qwen3:14b               | 10 GB; 100% GPU        | 0.7                | 116.899             | 0.7            | 112.468         | 0.4              | 187.583           | 0.60            |
@@ -53,7 +54,6 @@ Benchmarks were generated with [benchllama](https://github.com/srikanth235/bench
 | rnj-1:8b [2, 4]         | 6.2 GB; 100% GPU       | 0.0                | 9.393               |                |                 |                  |                   |                 |
 | gpt-oss:20b [2]         | 18 GB; 17%/83% CPU/GPU | ?                  | ?                   |                |                 |                  |                   |                 |
 | starcoder2:15b [2]      | 9.9 GB; 100% GPU       |                    |                     |                |                 |                  |                   |                 |
-|                         |                        |                    |                     |                |                 |                  |                   |                 |
 
 These results are used as an initial triage to determine which to further explore,
 because the full run takes a long time with almost 500 tests across multiple languages.
